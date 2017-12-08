@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<h1>Результат</h1>
+<p><b>{{word_}}, катерогия - {{ cat }}</b></p>
+<body>
+<p> 
+    {% for word, count in words.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+ </p>
+</body>
+</html>

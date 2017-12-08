@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<h1>Статистика</h1>
+<p>В голосовании приняло участие <b>{{all_p}}</b> человек.</p>
+
+<p>Все уникальные варианты и количество их выбора: </p>
+<body>
+  <table border="1">
+    <tr><td>Солидный </td><td> <ul>
+    {% for word, count in words1.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td>
+       <td>Тотальный </td><td> <ul>
+    {% for word, count in words2.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td></tr>
+       <tr><td>Истошный </td><td> <ul>
+    {% for word, count in words3.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td>
+       <td>Безукоризненный </td><td> <ul>
+    {% for word, count in words4.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td></tr>
+        <tr><td>Безотлагательный </td><td> <ul>
+    {% for word, count in words5.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td>
+        <td>Вопиющий </td><td> <ul>
+    {% for word, count in words6.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td></tr>
+        <tr><td>Исчерпывающий </td><td> <ul>
+    {% for word, count in words7.items() %}
+        <li>  {{ word }}  - {{ count }}     </li>
+    {% endfor %}
+</ul></td></tr>
+      
+      
+      
+
+  </table>
+    
+    
+   
+<p>В голосовании приняло участие :</p>
+<p><b>{{fem}}%</b> - <i>женщин</i></p>
+<p><b>{{mal}}%</b> - <i>мужчин</i></p>
+
+<p><i>Возраст участников от <b>{{mina}}</b> до <b>{{maxa}}</b> лет</i></p>
+
+<p><b>{{work_student}}%</b> - <i>работают и учатся</i></p>
+
+
+<p>Их рабочая деятельность:</p>
+<p><b>{{pro}}%</b> - <i>сфера материального производства</i></p>
+<p><b>{{inte}}%</b> - <i>интеллектуальная сфера</i></p>
+<p><b>{{serv}}%</b> - <i>сфера услуг</i></p>
+
+
+
+
+</body>
+</html>
